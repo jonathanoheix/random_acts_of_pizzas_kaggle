@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="request_text_nb_chars <= 518.5\ngini = 0.371\nsamples = 4040\nvalue = [3046, 994]\nclass = y[0]", fillcolor="#edaa7a"] ;
+1 [label="requester_number_of_comments_in_raop_at_request <= 8.5\ngini = 0.334\nsamples = 3075\nvalue = [2423, 652]\nclass = y[0]", fillcolor="#eca36e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="requester_upvotes_plus_downvotes_at_request <= 7.5\ngini = 0.324\nsamples = 3020\nvalue = [2405, 615]\nclass = y[0]", fillcolor="#eca16c"] ;
+1 -> 2 ;
+3 [label="gini = 0.218\nsamples = 706\nvalue = [618, 88]\nclass = y[0]", fillcolor="#e99355"] ;
+2 -> 3 ;
+4 [label="gini = 0.352\nsamples = 2314\nvalue = [1787, 527]\nclass = y[0]", fillcolor="#eda673"] ;
+2 -> 4 ;
+5 [label="request_title_nb_chars <= 28.5\ngini = 0.44\nsamples = 55\nvalue = [18, 37]\nclass = y[1]", fillcolor="#99cdf2"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 5\nvalue = [5, 0]\nclass = y[0]", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="gini = 0.385\nsamples = 50\nvalue = [13, 37]\nclass = y[1]", fillcolor="#7fbfee"] ;
+5 -> 7 ;
+8 [label="requester_account_age_in_days_at_request <= 0.011\ngini = 0.458\nsamples = 965\nvalue = [623, 342]\nclass = y[0]", fillcolor="#f3c6a6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="topic_0_score <= 0.069\ngini = 0.324\nsamples = 265\nvalue = [211, 54]\nclass = y[0]", fillcolor="#eca16c"] ;
+8 -> 9 ;
+10 [label="gini = 0.296\nsamples = 249\nvalue = [204, 45]\nclass = y[0]", fillcolor="#eb9d65"] ;
+9 -> 10 ;
+11 [label="gini = 0.492\nsamples = 16\nvalue = [7, 9]\nclass = y[1]", fillcolor="#d3e9f9"] ;
+9 -> 11 ;
+12 [label="requester_number_of_posts_on_raop_at_request <= 0.5\ngini = 0.484\nsamples = 700\nvalue = [412, 288]\nclass = y[0]", fillcolor="#f7d9c3"] ;
+8 -> 12 ;
+13 [label="gini = 0.477\nsamples = 668\nvalue = [406, 262]\nclass = y[0]", fillcolor="#f6d2b9"] ;
+12 -> 13 ;
+14 [label="gini = 0.305\nsamples = 32\nvalue = [6, 26]\nclass = y[1]", fillcolor="#67b4eb"] ;
+12 -> 14 ;
+}
